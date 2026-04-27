@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO primario -->
-    <title>Arretxe Motos Irún | Venta, Reparación y Mantenimiento de Motos Honda y SYM</title>
-    <meta name="description" content="Taller y tienda de motos en Irún (Gipuzkoa) con más de 58 años de experiencia. Venta, reparación y mantenimiento de motos. Distribuidores oficiales Honda y SYM. Cascos, recambios y asesoramiento. Tel: 943 62 59 05.">
+    <title>Arretxe Motos Irún | Taller Honda y SYM desde 1966</title>
+    <meta name="description" content="Taller de motos en Irún con más de 58 años. Distribuidores oficiales Honda y SYM. Reparación, mantenimiento y venta. Tel: 943 62 59 05.">
     <meta name="author" content="Arretxe Motos y Maquinaria Agricola S.L.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="geo.region" content="ES-SS">
@@ -93,26 +93,30 @@
             "@type": "AggregateRating",
             "ratingValue": "4.8",
             "reviewCount": "66",
-            "bestRating": "5"
+            "bestRating": "5",
+            "worstRating": "1"
         },
         "review": [
             {
                 "@type": "Review",
                 "author": {"@type": "Person", "name": "Oihan Ugarte Garcia"},
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-                "reviewBody": "He ido por una duda que tenía sobre mi moto, sin cita previa ni nada. Me atendieron de maravilla y me resolvieron el problema al momento."
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+                "reviewBody": "He ido por una duda que tenía sobre mi moto, sin cita previa ni nada. Me atendieron de maravilla y me resolvieron el problema al momento.",
+                "datePublished": "2024-11-01"
             },
             {
                 "@type": "Review",
                 "author": {"@type": "Person", "name": "Jon Mikel Dambolenea"},
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-                "reviewBody": "Me ha encantado el trato recibido, volveré a repetir 100%. Un equipo profesional y cercano que hace que te sientas bien atendido desde el primer momento."
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+                "reviewBody": "Me ha encantado el trato recibido, volveré a repetir 100%. Un equipo profesional y cercano que hace que te sientas bien atendido desde el primer momento.",
+                "datePublished": "2024-10-15"
             },
             {
                 "@type": "Review",
                 "author": {"@type": "Person", "name": "Borja Vicente"},
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-                "reviewBody": "Fui con un problema en la moto que nunca habían visto y lo solucionaron. Gran profesionalidad y mucho conocimiento técnico. Muy recomendable."
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+                "reviewBody": "Fui con un problema en la moto que nunca habían visto y lo solucionaron. Gran profesionalidad y mucho conocimiento técnico. Muy recomendable.",
+                "datePublished": "2024-09-20"
             }
         ],
         "hasOfferCatalog": {
@@ -339,7 +343,7 @@
             font-weight: 700;
             cursor: pointer;
             color: #555;
-            transition: all var(--transition);
+            transition: background-color var(--transition), border-color var(--transition), color var(--transition);
         }
         .lang-btn:hover, .lang-btn.active {
             background: var(--red);
@@ -361,7 +365,7 @@
             height: 2px;
             background: #222;
             border-radius: 2px;
-            transition: all 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
         .mobile-nav {
             display: none;
@@ -471,7 +475,7 @@
             font-size: 0.95rem;
             border: 2px solid var(--red);
             cursor: pointer;
-            transition: all var(--transition);
+            transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
         }
         .btn-primary:hover { background: var(--red-dark); border-color: var(--red-dark); transform: translateY(-2px); }
         .btn-outline {
@@ -483,7 +487,7 @@
             font-size: 0.95rem;
             border: 2px solid rgba(255,255,255,0.8);
             cursor: pointer;
-            transition: all var(--transition);
+            transition: background-color var(--transition), transform var(--transition);
         }
         .btn-outline:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
 
@@ -507,6 +511,7 @@
             font-weight: 800;
             line-height: 1;
             display: block;
+            font-variant-numeric: tabular-nums;
         }
         .stat-label {
             font-size: 0.85rem;
@@ -741,7 +746,7 @@
             border-radius: 12px;
             padding: 32px 24px;
             text-align: center;
-            transition: all var(--transition);
+            transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
             box-shadow: 0 2px 12px rgba(0,0,0,0.05);
         }
         .service-card:hover {
@@ -957,7 +962,7 @@
             font-size: 0.85rem;
             font-weight: 700;
             cursor: pointer;
-            transition: all var(--transition);
+            transition: border-color var(--transition), color var(--transition);
         }
         .cookie-btn-reject:hover { border-color: #888; color: #fff; }
 
@@ -1169,7 +1174,7 @@
             font-size: 0.72rem;
             color: #b0b0b0;
             pointer-events: none;
-            transition: all 0.2s ease;
+            transition: color 0.2s ease;
             font-weight: 700;
             letter-spacing: 0.5px;
             text-transform: uppercase;
@@ -1718,7 +1723,7 @@
                 <div class="moto-card-body">
                     <h3>Honda Forza 125</h3>
                     <p data-i18n="motos.m1.desc">Scooter premium 125cc, ágil y conectado para la ciudad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-forza-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1728,7 +1733,7 @@
                 <div class="moto-card-body">
                     <h3>Honda Forza 350</h3>
                     <p data-i18n="motos.m2.desc">Scooter GT 350cc, potencia y confort para ciudad y carretera</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-forza-350.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1738,7 +1743,7 @@
                 <div class="moto-card-body">
                     <h3>Honda PCX 125</h3>
                     <p data-i18n="motos.m3.desc">Scooter urbano 125cc eficiente, ligero y muy económico</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-pcx-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1748,7 +1753,7 @@
                 <div class="moto-card-body">
                     <h3>Honda PCX DX 125</h3>
                     <p data-i18n="motos.m4.desc">Versión Deluxe del PCX con equipamiento y acabados superiores</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-pcx-dx-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1758,7 +1763,7 @@
                 <div class="moto-card-body">
                     <h3>Honda GB 350 S</h3>
                     <p data-i18n="motos.m5.desc">Naked clásica 350cc de carácter retro y gran presencia en carretera</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-gb-350-s.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1768,7 +1773,7 @@
                 <div class="moto-card-body">
                     <h3>Honda ADV 350</h3>
                     <p data-i18n="motos.m6.desc">Scooter adventure 350cc, versátil para ciudad y aventura off-road</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-adv-350.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1778,7 +1783,7 @@
                 <div class="moto-card-body">
                     <h3>Honda CB 125 F</h3>
                     <p data-i18n="motos.m7.desc">Naked urbana 125cc sencilla, fiable y perfecta para el día a día</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-cb-125-f.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1788,7 +1793,7 @@
                 <div class="moto-card-body">
                     <h3>Honda CB 125 R</h3>
                     <p data-i18n="motos.m8.desc">Naked deportiva 125cc con estilo neo-sports café y gran agilidad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-cb-125-r.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1798,7 +1803,7 @@
                 <div class="moto-card-body">
                     <h3>Honda Vision 110</h3>
                     <p data-i18n="motos.m9.desc">Scooter compacto 110cc, económico y muy manejable en ciudad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-vision-110.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1808,7 +1813,7 @@
                 <div class="moto-card-body">
                     <h3>Honda SH Mode 125</h3>
                     <p data-i18n="motos.m10.desc">Scooter retro urbano 125cc, elegante y práctico para la ciudad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-sh-mode-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1818,7 +1823,7 @@
                 <div class="moto-card-body">
                     <h3>Honda SH 350 Sport</h3>
                     <p data-i18n="motos.m18.desc">Scooter deportivo 350cc con diseño premium y prestaciones superiores</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-sh-350-sport.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1828,7 +1833,7 @@
                 <div class="moto-card-body">
                     <h3>Honda SH 125</h3>
                     <p data-i18n="motos.m21.desc">Scooter premium 125cc icónico, elegante y con gran equipamiento de serie</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/honda-sh-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
         </div>
@@ -1848,7 +1853,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Fugue 125</h3>
                     <p data-i18n="motos.m11.desc">Scooter moderno 125cc con diseño elegante y gran autonomía</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-fugue-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1858,7 +1863,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Jet 14 125</h3>
                     <p data-i18n="motos.m12.desc">Scooter deportivo 125cc ágil y dinámico para moverse por la ciudad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-jet-14-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1868,7 +1873,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Symphony SR 125</h3>
                     <p data-i18n="motos.m13.desc">Scooter clásico 125cc con acabados premium y gran comodidad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-symphony-sr-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1878,7 +1883,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Symphony ST 125</h3>
                     <p data-i18n="motos.m14.desc">Scooter urbano 125cc cómodo, versátil y de bajo consumo</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-symphony-st-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1888,7 +1893,7 @@
                 <div class="moto-card-body">
                     <h3>SYM ADX 125</h3>
                     <p data-i18n="motos.m15.desc">Scooter adventure 125cc con carácter todoterreno y gran versatilidad</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-adx-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1898,7 +1903,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Jet EVO 125</h3>
                     <p data-i18n="motos.m16.desc">Scooter deportivo 125cc de última generación, ágil y con gran equipamiento</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-jet-evo-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1908,7 +1913,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Joymax 125</h3>
                     <p data-i18n="motos.m17.desc">Maxi-scooter 125cc con gran espacio de almacenaje y confort superior</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-joymax-125.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1918,7 +1923,7 @@
                 <div class="moto-card-body">
                     <h3>SYM Joymax Z 300</h3>
                     <p data-i18n="motos.m19.desc">Maxi-scooter 300cc con gran potencia, confort y equipamiento premium</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-joymax-z-300.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
             <div class="moto-card">
@@ -1928,7 +1933,7 @@
                 <div class="moto-card-body">
                     <h3>SYM ADXTG 400</h3>
                     <p data-i18n="motos.m20.desc">Scooter adventure 400cc de altas prestaciones para carretera y off-road</p>
-                    <a href="#contacto" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
+                    <a href="motos/sym-adxtg-400.html" class="btn-red-sm" data-i18n="motos.btn">Consultar</a>
                 </div>
             </div>
         </div>
@@ -1945,57 +1950,57 @@
         <p class="section-subtitle" data-i18n="gallery.subtitle">Instalaciones, trabajos y productos</p>
     </div>
     <div class="gallery-grid" id="grid-galeria">
-        <div class="gallery-item" onclick="openLightbox(0)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(0)}" aria-label="Ver imagen: Interior del taller de motos Arretxe en Irún">
             <img src="galeria_IMG_9369.webp" alt="Taller de motos Arretxe en Irún - interior del taller" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(1)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(1)}" aria-label="Ver imagen: Mecánico reparando moto en taller Irún">
             <img src="galeria_IMG_9370.webp" alt="Mecánico reparando moto en taller Irún" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(2)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(2)}" aria-label="Ver imagen: Motos en exposición taller Arretxe Gipuzkoa">
             <img src="galeria_IMG_9375.webp" alt="Motos en exposición taller Arretxe Gipuzkoa" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(3)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(3)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(3)}" aria-label="Ver imagen: Instalaciones taller de motos Arretxe Irún">
             <img src="galeria_IMG_9376.webp" alt="Instalaciones taller de motos Arretxe Irún" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(4)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(4)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(4)}" aria-label="Ver imagen: Recambios y piezas de moto originales Irún">
             <img src="galeria_IMG_9377.webp" alt="Recambios y piezas de moto originales Irún" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(5)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(5)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(5)}" aria-label="Ver imagen: Cascos de moto HJC y LS2 en Arretxe Motos Irún">
             <img src="galeria_IMG_9384.webp" alt="Cascos de moto HJC y LS2 en Arretxe Motos Irún" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(6)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(6)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(6)}" aria-label="Ver imagen: Taller Arretxe Motos fachada exterior Irún Gipuzkoa">
             <img src="galeria_IMG_9399.webp" alt="Taller Arretxe Motos fachada exterior Irún Gipuzkoa" loading="lazy" width="1920" height="1440">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(7)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(7)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(7)}" aria-label="Ver imagen: Galería Arretxe Motos Irún">
             <img src="nuevafotogalerias.webp" alt="Galería Arretxe Motos Irún" loading="lazy" width="1200" height="1600">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox(8)">
+        <div class="gallery-item" role="button" tabindex="0" onclick="openLightbox(8)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(8)}" aria-label="Ver imagen: Galería Arretxe Motos Irún 2">
             <img src="fotosgalerianueva2.webp" alt="Galería Arretxe Motos Irún" loading="lazy" width="1600" height="1200">
-            <div class="gallery-item-overlay">
+            <div class="gallery-item-overlay" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
         </div>
@@ -2081,19 +2086,19 @@
         <div class="contact-form">
             <form id="contactForm" onsubmit="submitForm(event)">
                 <div class="form-group">
-                    <input type="text" id="fname" name="name" required>
+                    <input type="text" id="fname" name="name" autocomplete="name" required>
                     <label for="fname" data-i18n="contact.form.name">Tu nombre</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="femail" name="email" required>
+                    <input type="email" id="femail" name="email" autocomplete="email" required>
                     <label for="femail" data-i18n="contact.form.email">Tu email</label>
                 </div>
                 <div class="form-group">
-                    <input type="tel" id="fphone" name="phone">
+                    <input type="tel" id="fphone" name="phone" autocomplete="tel">
                     <label for="fphone" data-i18n="contact.form.phone">Teléfono (opcional)</label>
                 </div>
                 <div class="form-group">
-                    <textarea id="fmsg" name="message" required></textarea>
+                    <textarea id="fmsg" name="message" autocomplete="off" required></textarea>
                     <label for="fmsg" data-i18n="contact.form.message">Tu mensaje</label>
                 </div>
                 <button type="submit" class="btn-shimmer" id="submitBtn" data-i18n="contact.form.send">Enviar mensaje</button>
@@ -2146,7 +2151,7 @@
 <div class="legal-modal-overlay" id="modal-aviso" role="dialog" aria-modal="true" aria-label="Aviso Legal">
     <div class="legal-modal">
         <button class="legal-modal-close" onclick="closeLegal('aviso')" aria-label="Cerrar">&times;</button>
-        <div data-i18n="legal.aviso"><h2>Aviso Legal</h2><p><strong>Última actualización:</strong> marzo de 2026</p><h3>1. Datos identificativos</h3><p>En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), se facilitan los siguientes datos:</p><ul><li><strong>Razón social:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Domicilio social:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Irún, Gipuzkoa</li><li><strong>Teléfono:</strong> 943 62 59 05</li><li><strong>Email:</strong> motosarretxe@gmail.com</li><li><strong>Actividad:</strong> Taller de reparación y venta de motocicletas</li></ul><h3>2. Objeto y ámbito de aplicación</h3><p>El presente Aviso Legal regula el acceso y uso del sitio web <strong>www.motosarretxe.com</strong>. El acceso a este sitio web implica la aceptación plena de las condiciones establecidas en este aviso legal.</p><h3>3. Propiedad intelectual e industrial</h3><p>Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño gráfico, código fuente) son titularidad de Arretxe Motos y Maquinaria Agricola S.L. o de sus licenciantes, y están protegidos por la legislación española e internacional sobre propiedad intelectual e industrial. Queda expresamente prohibida la reproducción, distribución o modificación sin autorización expresa.</p><h3>4. Exclusión de responsabilidad</h3><p>Arretxe Motos y Maquinaria Agricola S.L. no se responsabiliza de los daños derivados del uso del sitio web, de fallos técnicos o de la desactualización de la información publicada. Los contenidos pueden modificarse sin previo aviso.</p><h3>5. Legislación aplicable y jurisdicción</h3><p>Este aviso legal se rige por la legislación española. Para la resolución de cualquier controversia, las partes se someten a los juzgados y tribunales de Gipuzkoa, con renuncia expresa a cualquier otro fuero.</p></div>
+        <div data-i18n="legal.aviso"><h2>Aviso Legal</h2><p><strong>Última actualización:</strong> abril de 2026</p><h3>1. Datos identificativos</h3><p>En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), se facilitan los siguientes datos:</p><ul><li><strong>Razón social:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Domicilio social:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Irún, Gipuzkoa</li><li><strong>Teléfono:</strong> 943 62 59 05</li><li><strong>Email:</strong> motosarretxe@gmail.com</li><li><strong>Actividad:</strong> Taller de reparación y venta de motocicletas</li></ul><h3>2. Objeto y ámbito de aplicación</h3><p>El presente Aviso Legal regula el acceso y uso del sitio web <strong>www.motosarretxe.com</strong>. El acceso a este sitio web implica la aceptación plena de las condiciones establecidas en este aviso legal.</p><h3>3. Propiedad intelectual e industrial</h3><p>Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño gráfico, código fuente) son titularidad de Arretxe Motos y Maquinaria Agricola S.L. o de sus licenciantes, y están protegidos por la legislación española e internacional sobre propiedad intelectual e industrial. Queda expresamente prohibida la reproducción, distribución o modificación sin autorización expresa.</p><h3>4. Exclusión de responsabilidad</h3><p>Arretxe Motos y Maquinaria Agricola S.L. no se responsabiliza de los daños derivados del uso del sitio web, de fallos técnicos o de la desactualización de la información publicada. Los contenidos pueden modificarse sin previo aviso.</p><h3>5. Legislación aplicable y jurisdicción</h3><p>Este aviso legal se rige por la legislación española. Para la resolución de cualquier controversia, las partes se someten a los juzgados y tribunales de Gipuzkoa, con renuncia expresa a cualquier otro fuero.</p></div>
     </div>
 </div>
 
@@ -2154,7 +2159,7 @@
 <div class="legal-modal-overlay" id="modal-privacidad" role="dialog" aria-modal="true" aria-label="Política de Privacidad">
     <div class="legal-modal">
         <button class="legal-modal-close" onclick="closeLegal('privacidad')" aria-label="Cerrar">&times;</button>
-        <div data-i18n="legal.privacidad"><h2>Política de Privacidad</h2><p><strong>Última actualización:</strong> marzo de 2026</p><h3>1. Responsable del tratamiento</h3><ul><li><strong>Identidad:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Dirección:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Irún, Gipuzkoa</li><li><strong>Email de contacto:</strong> motosarretxe@gmail.com</li></ul><h3>2. Datos que recogemos</h3><p>A través del formulario de contacto de este sitio web recogemos los siguientes datos personales:</p><ul><li>Nombre y apellidos</li><li>Dirección de correo electrónico</li><li>Número de teléfono (opcional)</li><li>Contenido del mensaje</li></ul><h3>3. Finalidad del tratamiento</h3><p>Los datos facilitados se utilizan exclusivamente para responder a su consulta o solicitud de información, y para mantener una comunicación comercial con usted si así lo desea.</p><h3>4. Base jurídica</h3><p>El tratamiento se realiza en base al consentimiento del interesado (art. 6.1.a RGPD), otorgado al enviar el formulario de contacto.</p><h3>5. Conservación de datos</h3><p>Los datos se conservarán durante el tiempo necesario para gestionar su consulta y, en su caso, durante los plazos legalmente exigidos.</p><h3>6. Destinatarios</h3><p>Los datos no serán cedidos a terceros, salvo obligación legal. El formulario de contacto emplea Google Workspace (Google Apps Script) para el envío de notificaciones internas.</p><h3>7. Sus derechos</h3><p>Puede ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a <strong>motosarretxe@gmail.com</strong>. También tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p></div>
+        <div data-i18n="legal.privacidad"><h2>Política de Privacidad</h2><p><strong>Última actualización:</strong> abril de 2026</p><h3>1. Responsable del tratamiento</h3><ul><li><strong>Identidad:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Dirección:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Irún, Gipuzkoa</li><li><strong>Email de contacto:</strong> motosarretxe@gmail.com</li></ul><h3>2. Datos que recogemos</h3><p>A través del formulario de contacto de este sitio web recogemos los siguientes datos personales:</p><ul><li>Nombre y apellidos</li><li>Dirección de correo electrónico</li><li>Número de teléfono (opcional)</li><li>Contenido del mensaje</li></ul><h3>3. Finalidad del tratamiento</h3><p>Los datos facilitados se utilizan exclusivamente para responder a su consulta o solicitud de información, y para mantener una comunicación comercial con usted si así lo desea.</p><h3>4. Base jurídica</h3><p>El tratamiento se realiza en base al consentimiento del interesado (art. 6.1.a RGPD), otorgado al enviar el formulario de contacto.</p><h3>5. Conservación de datos</h3><p>Los datos se conservarán durante el tiempo necesario para gestionar su consulta y, en su caso, durante los plazos legalmente exigidos.</p><h3>6. Destinatarios</h3><p>Los datos no serán cedidos a terceros, salvo obligación legal. El formulario de contacto emplea Google Workspace (Google Apps Script) para el envío de notificaciones internas.</p><h3>7. Sus derechos</h3><p>Puede ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a <strong>motosarretxe@gmail.com</strong>. También tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p></div>
     </div>
 </div>
 
@@ -2162,7 +2167,7 @@
 <div class="legal-modal-overlay" id="modal-cookies" role="dialog" aria-modal="true" aria-label="Política de Cookies">
     <div class="legal-modal">
         <button class="legal-modal-close" onclick="closeLegal('cookies')" aria-label="Cerrar">&times;</button>
-        <div data-i18n="legal.cookies"><h2>Política de Cookies</h2><p><strong>Última actualización:</strong> marzo de 2026</p><h3>1. ¿Qué son las cookies?</h3><p>Las cookies son pequeños ficheros de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore su experiencia de navegación.</p><h3>2. Cookies que utilizamos</h3><p>Este sitio web utiliza únicamente cookies técnicas y de preferencia, necesarias para su correcto funcionamiento:</p><ul><li><strong>cookie_consent</strong> — Almacena su preferencia sobre el uso de cookies. Duración: 1 año. Tipo: propia, técnica.</li><li><strong>lang_pref</strong> — Recuerda el idioma seleccionado (ES/EU/EN/FR). Duración: sesión. Tipo: propia, preferencia.</li></ul><p>Este sitio web <strong>no utiliza cookies de seguimiento, analítica ni publicidad</strong> de terceros.</p><h3>3. Cómo gestionar las cookies</h3><p>Puede aceptar o rechazar el uso de cookies en el banner que aparece al visitar el sitio por primera vez. También puede configurar su navegador para bloquear o eliminar cookies en cualquier momento:</p><ul><li><strong>Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies</li><li><strong>Firefox:</strong> Opciones &gt; Privacidad y seguridad</li><li><strong>Safari:</strong> Preferencias &gt; Privacidad</li><li><strong>Edge:</strong> Configuración &gt; Privacidad, búsqueda y servicios</li></ul><h3>4. Más información</h3><p>Para más información sobre el tratamiento de sus datos, consulte nuestra <a href='#' onclick='closeLegal(\"cookies\");openLegal(\"privacidad\");return false;' style='color:var(--red);text-decoration:underline;'>Política de Privacidad</a>.</p></div>
+        <div data-i18n="legal.cookies"><h2>Política de Cookies</h2><p><strong>Última actualización:</strong> abril de 2026</p><h3>1. ¿Qué son las cookies?</h3><p>Las cookies son pequeños ficheros de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore su experiencia de navegación.</p><h3>2. Cookies que utilizamos</h3><p>Este sitio web utiliza únicamente cookies técnicas y de preferencia, necesarias para su correcto funcionamiento:</p><ul><li><strong>cookie_consent</strong> — Almacena su preferencia sobre el uso de cookies. Duración: 1 año. Tipo: propia, técnica.</li><li><strong>lang_pref</strong> — Recuerda el idioma seleccionado (ES/EU/EN/FR). Duración: sesión. Tipo: propia, preferencia.</li></ul><p>Este sitio web <strong>no utiliza cookies de seguimiento, analítica ni publicidad</strong> de terceros.</p><h3>3. Cómo gestionar las cookies</h3><p>Puede aceptar o rechazar el uso de cookies en el banner que aparece al visitar el sitio por primera vez. También puede configurar su navegador para bloquear o eliminar cookies en cualquier momento:</p><ul><li><strong>Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies</li><li><strong>Firefox:</strong> Opciones &gt; Privacidad y seguridad</li><li><strong>Safari:</strong> Preferencias &gt; Privacidad</li><li><strong>Edge:</strong> Configuración &gt; Privacidad, búsqueda y servicios</li></ul><h3>4. Más información</h3><p>Para más información sobre el tratamiento de sus datos, consulte nuestra <a href='#' onclick='closeLegal(\"cookies\");openLegal(\"privacidad\");return false;' style='color:var(--red);text-decoration:underline;'>Política de Privacidad</a>.</p></div>
     </div>
 </div>
 
@@ -2377,9 +2382,9 @@ const translations = {
         "cookies.banner.reject": "Rechazar",
         "map.title": "Ubicaci\u00f3n del taller",
         "map.btn": "Ver mapa interactivo",
-        "legal.aviso": "<h2>Aviso Legal</h2><p><strong>\u00daltima actualizaci\u00f3n:</strong> marzo de 2026</p><h3>1. Datos identificativos</h3><p>En cumplimiento con el deber de informaci\u00f3n recogido en el art\u00edculo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Informaci\u00f3n y del Comercio Electr\u00f3nico (LSSICE), se facilitan los siguientes datos:</p><ul><li><strong>Raz\u00f3n social:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Domicilio social:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Ir\u00fan, Gipuzkoa</li><li><strong>Tel\u00e9fono:</strong> 943 62 59 05</li><li><strong>Email:</strong> motosarretxe@gmail.com</li><li><strong>Actividad:</strong> Taller de reparaci\u00f3n y venta de motocicletas</li></ul><h3>2. Objeto y \u00e1mbito de aplicaci\u00f3n</h3><p>El presente Aviso Legal regula el acceso y uso del sitio web <strong>www.motosarretxe.com</strong>. El acceso implica la aceptaci\u00f3n plena de las condiciones establecidas.</p><h3>3. Propiedad intelectual e industrial</h3><p>Todos los contenidos del sitio web son titularidad de Arretxe Motos y Maquinaria Agricola S.L. o de sus licenciantes, protegidos por la legislaci\u00f3n espa\u00f1ola e internacional. Queda prohibida su reproducci\u00f3n sin autorizaci\u00f3n expresa.</p><h3>4. Exclusi\u00f3n de responsabilidad</h3><p>Arretxe Motos y Maquinaria Agricola S.L. no se responsabiliza de los da\u00f1os derivados del uso del sitio web o de la desactualizaci\u00f3n de la informaci\u00f3n publicada.</p><h3>5. Legislaci\u00f3n aplicable y jurisdicci\u00f3n</h3><p>Este aviso legal se rige por la legislaci\u00f3n espa\u00f1ola. Las partes se someten a los juzgados y tribunales de Gipuzkoa.</p>",
-        "legal.privacidad": "<h2>Pol\u00edtica de Privacidad</h2><p><strong>\u00daltima actualizaci\u00f3n:</strong> marzo de 2026</p><h3>1. Responsable del tratamiento</h3><ul><li><strong>Identidad:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Direcci\u00f3n:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Ir\u00fan, Gipuzkoa</li><li><strong>Email:</strong> motosarretxe@gmail.com</li></ul><h3>2. Datos que recogemos</h3><p>A trav\u00e9s del formulario de contacto recogemos:</p><ul><li>Nombre y apellidos</li><li>Direcci\u00f3n de correo electr\u00f3nico</li><li>N\u00famero de tel\u00e9fono (opcional)</li><li>Contenido del mensaje</li></ul><h3>3. Finalidad del tratamiento</h3><p>Los datos se utilizan exclusivamente para responder a su consulta y mantener comunicaci\u00f3n comercial si as\u00ed lo desea.</p><h3>4. Base jur\u00eddica</h3><p>El tratamiento se realiza en base al consentimiento del interesado (art. 6.1.a RGPD), otorgado al enviar el formulario.</p><h3>5. Conservaci\u00f3n de datos</h3><p>Los datos se conservar\u00e1n durante el tiempo necesario para gestionar su consulta y los plazos legalmente exigidos.</p><h3>6. Destinatarios</h3><p>Los datos no ser\u00e1n cedidos a terceros, salvo obligaci\u00f3n legal.</p><h3>7. Sus derechos</h3><p>Puede ejercer sus derechos de acceso, rectificaci\u00f3n, supresi\u00f3n y oposici\u00f3n escribiendo a <strong>motosarretxe@gmail.com</strong> o ante la Agencia Espa\u00f1ola de Protecci\u00f3n de Datos (www.aepd.es).</p>",
-        "legal.cookies": "<h2>Pol\u00edtica de Cookies</h2><p><strong>\u00daltima actualizaci\u00f3n:</strong> marzo de 2026</p><h3>1. \u00bfQu\u00e9 son las cookies?</h3><p>Las cookies son peque\u00f1os ficheros de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore su experiencia.</p><h3>2. Cookies que utilizamos</h3><p>Este sitio web utiliza \u00fanicamente cookies t\u00e9cnicas y de preferencia:</p><ul><li><strong>cookie_consent</strong> \u2014 Almacena su preferencia sobre cookies. Duraci\u00f3n: 1 a\u00f1o.</li><li><strong>lang_pref</strong> \u2014 Recuerda el idioma seleccionado. Duraci\u00f3n: sesi\u00f3n.</li></ul><p>Este sitio <strong>no utiliza cookies de seguimiento ni publicidad</strong> de terceros.</p><h3>3. C\u00f3mo gestionar las cookies</h3><ul><li><strong>Chrome:</strong> Configuraci\u00f3n &gt; Privacidad y seguridad</li><li><strong>Firefox:</strong> Opciones &gt; Privacidad y seguridad</li><li><strong>Safari:</strong> Preferencias &gt; Privacidad</li><li><strong>Edge:</strong> Configuraci\u00f3n &gt; Privacidad y servicios</li></ul><h3>4. M\u00e1s informaci\u00f3n</h3><p>Consulte nuestra <a href='#' onclick='closeLegal(\"cookies\");openLegal(\"privacidad\");return false;' style='color:var(--red);text-decoration:underline;'>Pol\u00edtica de Privacidad</a>.</p>",
+        "legal.aviso": "<h2>Aviso Legal</h2><p><strong>\u00daltima actualizaci\u00f3n:</strong> abril de 2026</p><h3>1. Datos identificativos</h3><p>En cumplimiento con el deber de informaci\u00f3n recogido en el art\u00edculo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Informaci\u00f3n y del Comercio Electr\u00f3nico (LSSICE), se facilitan los siguientes datos:</p><ul><li><strong>Raz\u00f3n social:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Domicilio social:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Ir\u00fan, Gipuzkoa</li><li><strong>Tel\u00e9fono:</strong> 943 62 59 05</li><li><strong>Email:</strong> motosarretxe@gmail.com</li><li><strong>Actividad:</strong> Taller de reparaci\u00f3n y venta de motocicletas</li></ul><h3>2. Objeto y \u00e1mbito de aplicaci\u00f3n</h3><p>El presente Aviso Legal regula el acceso y uso del sitio web <strong>www.motosarretxe.com</strong>. El acceso implica la aceptaci\u00f3n plena de las condiciones establecidas.</p><h3>3. Propiedad intelectual e industrial</h3><p>Todos los contenidos del sitio web son titularidad de Arretxe Motos y Maquinaria Agricola S.L. o de sus licenciantes, protegidos por la legislaci\u00f3n espa\u00f1ola e internacional. Queda prohibida su reproducci\u00f3n sin autorizaci\u00f3n expresa.</p><h3>4. Exclusi\u00f3n de responsabilidad</h3><p>Arretxe Motos y Maquinaria Agricola S.L. no se responsabiliza de los da\u00f1os derivados del uso del sitio web o de la desactualizaci\u00f3n de la informaci\u00f3n publicada.</p><h3>5. Legislaci\u00f3n aplicable y jurisdicci\u00f3n</h3><p>Este aviso legal se rige por la legislaci\u00f3n espa\u00f1ola. Las partes se someten a los juzgados y tribunales de Gipuzkoa.</p>",
+        "legal.privacidad": "<h2>Política de Privacidad</h2><p><strong>Última actualización:</strong> abril de 2026</p><h3>1. Responsable del tratamiento</h3><ul><li><strong>Identidad:</strong> Arretxe Motos y Maquinaria Agricola S.L.</li><li><strong>Direcci\u00f3n:</strong> Salvador Echeandia Kalea, 12, BJ 1, 20304 Ir\u00fan, Gipuzkoa</li><li><strong>Email:</strong> motosarretxe@gmail.com</li></ul><h3>2. Datos que recogemos</h3><p>A trav\u00e9s del formulario de contacto recogemos:</p><ul><li>Nombre y apellidos</li><li>Direcci\u00f3n de correo electr\u00f3nico</li><li>N\u00famero de tel\u00e9fono (opcional)</li><li>Contenido del mensaje</li></ul><h3>3. Finalidad del tratamiento</h3><p>Los datos se utilizan exclusivamente para responder a su consulta y mantener comunicaci\u00f3n comercial si as\u00ed lo desea.</p><h3>4. Base jur\u00eddica</h3><p>El tratamiento se realiza en base al consentimiento del interesado (art. 6.1.a RGPD), otorgado al enviar el formulario.</p><h3>5. Conservaci\u00f3n de datos</h3><p>Los datos se conservar\u00e1n durante el tiempo necesario para gestionar su consulta y los plazos legalmente exigidos.</p><h3>6. Destinatarios</h3><p>Los datos no ser\u00e1n cedidos a terceros, salvo obligaci\u00f3n legal.</p><h3>7. Sus derechos</h3><p>Puede ejercer sus derechos de acceso, rectificaci\u00f3n, supresi\u00f3n y oposici\u00f3n escribiendo a <strong>motosarretxe@gmail.com</strong> o ante la Agencia Espa\u00f1ola de Protecci\u00f3n de Datos (www.aepd.es).</p>",
+        "legal.cookies": "<h2>Política de Cookies</h2><p><strong>Última actualización:</strong> abril de 2026</p><h3>1. \u00bfQu\u00e9 son las cookies?</h3><p>Las cookies son peque\u00f1os ficheros de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore su experiencia.</p><h3>2. Cookies que utilizamos</h3><p>Este sitio web utiliza \u00fanicamente cookies t\u00e9cnicas y de preferencia:</p><ul><li><strong>cookie_consent</strong> \u2014 Almacena su preferencia sobre cookies. Duraci\u00f3n: 1 a\u00f1o.</li><li><strong>lang_pref</strong> \u2014 Recuerda el idioma seleccionado. Duraci\u00f3n: sesi\u00f3n.</li></ul><p>Este sitio <strong>no utiliza cookies de seguimiento ni publicidad</strong> de terceros.</p><h3>3. C\u00f3mo gestionar las cookies</h3><ul><li><strong>Chrome:</strong> Configuraci\u00f3n &gt; Privacidad y seguridad</li><li><strong>Firefox:</strong> Opciones &gt; Privacidad y seguridad</li><li><strong>Safari:</strong> Preferencias &gt; Privacidad</li><li><strong>Edge:</strong> Configuraci\u00f3n &gt; Privacidad y servicios</li></ul><h3>4. M\u00e1s informaci\u00f3n</h3><p>Consulte nuestra <a href='#' onclick='closeLegal(\"cookies\");openLegal(\"privacidad\");return false;' style='color:var(--red);text-decoration:underline;'>Pol\u00edtica de Privacidad</a>.</p>",
     },
     eu: {
         "topbar.hours": "Al-Or 9:00-13:00 / 15:30-19:30 \u2022 Larun-Ig Itxita",
