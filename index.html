@@ -2085,6 +2085,10 @@
         </div>
         <div class="contact-form">
             <form id="contactForm" onsubmit="submitForm(event)">
+                <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+                    <label for="fwebsite">No rellenar</label>
+                    <input type="text" id="fwebsite" name="website" tabindex="-1" autocomplete="off">
+                </div>
                 <div class="form-group">
                     <input type="text" id="fname" name="name" autocomplete="name" required>
                     <label for="fname" data-i18n="contact.form.name">Tu nombre</label>
@@ -2840,6 +2844,7 @@ function submitForm(e) {
     btn.disabled = true;
 
     const formData = new FormData(form);
+    if (formData.get('website')) { form.reset(); form.style.display = 'none'; success.style.display = 'block'; return; }
     const payload = {
         nombre:    formData.get('name'),
         apellidos: '',
