@@ -15,6 +15,9 @@ RewriteRule ^(.*)$ https://www.motosarretxe.com/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^motosarretxe\.com$ [NC]
 RewriteRule ^(.*)$ https://www.motosarretxe.com/$1 [R=301,L]
 
+# Redirigir index.html a la URL canonica raiz
+RewriteRule ^index\.html$ https://www.motosarretxe.com/ [R=301,L]
+
 # Eliminar .html de las URLs (URLs limpias) — opcional, comentado por compatibilidad
 # RewriteCond %{REQUEST_FILENAME} !-d
 # RewriteCond %{REQUEST_FILENAME}\.html -f
