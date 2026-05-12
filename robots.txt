@@ -17,6 +17,7 @@ Allow: /*.js$
 Allow: /*.webp$
 Allow: /*.jpg$
 Allow: /*.png$
+Disallow: /hero.mp4
 
 # Googlebot-Image - permitir todas las imagenes
 User-agent: Googlebot-Image
