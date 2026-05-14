@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Cookies | Arretxe Motos Irún</title>
-    <meta name="description" content="Política de cookies de Arretxe Motos. Información sobre las cookies técnicas y de preferencia que utilizamos.">
+    <title>Politique des Cookies | Arretxe Motos Irún</title>
+    <meta name="description" content="Politique des cookies d'Arretxe Motos. Information sur les cookies techniques et de préférence utilisés.">
     <meta name="author" content="Arretxe Motos y Maquinaria Agricola S.L.">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://www.motosarretxe.com/cookies.html">
-    <link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/cookies.html">
+    <link rel="canonical" href="https://www.motosarretxe.com/fr/cookies.html">
     <link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/cookies.html">
+    <link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/cookies.html">
     <link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/cookies.html">
-    <link rel="icon" type="image/png" href="LOGO-FAVICON.png">
-    <link rel="apple-touch-icon" href="LOGO.png">
+    <link rel="icon" type="image/png" href="../LOGO-FAVICON.png">
+    <link rel="apple-touch-icon" href="../LOGO.png">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#CC0000">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.motosarretxe.com/cookies.html">
-    <meta property="og:title" content="Política de Cookies | Arretxe Motos Irún">
-    <meta property="og:description" content="Política de cookies técnicas y de preferencia de Arretxe Motos en Irún, Gipuzkoa.">
+    <meta property="og:url" content="https://www.motosarretxe.com/fr/cookies.html">
+    <meta property="og:title" content="Politique des Cookies | Arretxe Motos Irún">
+    <meta property="og:description" content="Politique des cookies techniques et de préférence d'Arretxe Motos à Irún.">
     <meta property="og:image" content="https://www.motosarretxe.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
     <meta property="og:site_name" content="Arretxe Motos">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Política de Cookies | Arretxe Motos Irún">
-    <meta name="twitter:description" content="Política de cookies de Arretxe Motos en Irún.">
+    <meta name="twitter:title" content="Politique des Cookies | Arretxe Motos Irún">
+    <meta name="twitter:description" content="Politique des cookies d'Arretxe Motos à Irún.">
     <meta name="twitter:image" content="https://www.motosarretxe.com/og-image.jpg">
 
     <!-- Schema BreadcrumbList -->
@@ -81,11 +82,11 @@
 </div>
 <header>
     <div class="navbar">
-        <a href="index.html" aria-label="Arretxe Motos - Inicio"><img src="LOGO.webp" alt="Arretxe Motos" width="600" height="93"></a>
+        <a href="index.html" aria-label="Arretxe Motos - Accueil"><img src="../LOGO.webp" alt="Arretxe Motos" width="600" height="93"></a>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="reservas.html">Reservas</a>
-            <a href="index.html#contacto">Contacto</a>
+            <a href="index.html">Accueil</a>
+            <a href="reservas.html">Réservation</a>
+            <a href="index.html#contacto">Contact</a>
         </nav>
     </div>
 </header>
@@ -118,12 +119,29 @@
         <li><strong>Edge:</strong> Configuración &gt; Privacidad, búsqueda y servicios</li>
     </ul>
 
-    <h2>4. Más información</h2>
-    <p>Para más información sobre el tratamiento de sus datos, consulte nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
+    <h2>4. En savoir plus</h2>
+    <p>Para más información sobre el tratamiento de sus datos, consulte nuestra <a href="privacidad.html">Politique de Confidentialité</a>.</p>
 </main>
 <footer>
-    <p>&copy; 2026 Arretxe Motos y Maquinaria Agricola S.L. — Todos los derechos reservados</p>
-    <p style="margin-top:8px"><a href="aviso-legal.html">Aviso Legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></p>
+    <p>&copy; 2026 Arretxe Motos y Maquinaria Agricola S.L. — Tous droits réservés</p>
+    <p style="margin-top:8px"><a href="aviso-legal.html">Mentions Légales</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></p>
 </footer>
+
+<script>
+/* Override setLang en /fr/ — convierte el switcher en navegación entre /fr/ y / */
+(function() {
+    function stripFr() {
+        var p = location.pathname;
+        if (p.indexOf('/fr/') === 0) return p.substring(3);
+        if (p === '/fr') return '/';
+        return p;
+    }
+    window.setLang = function(lang) {
+        if (lang === 'fr') return;
+        try { localStorage.setItem('lang_pref', lang); } catch (e) {}
+        location.href = stripFr();
+    };
+})();
+</script>
 </body>
 </html>

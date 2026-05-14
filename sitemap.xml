@@ -3,26 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <!-- Páginas principales -->
+    <!-- ========== ESPAÑOL ========== -->
     <url>
         <loc>https://www.motosarretxe.com/</loc>
         <lastmod>2026-05-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/"/>
         <image:image>
             <image:loc>https://www.motosarretxe.com/og-image.jpg</image:loc>
             <image:title>Arretxe Motos - Taller de motos Honda y SYM en Irún desde 1966</image:title>
             <image:caption>Taller de motos Arretxe en Irún, Gipuzkoa - distribuidor oficial Honda y SYM</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/galeria_IMG_9369.webp</image:loc>
-            <image:title>Interior del taller de motos Arretxe en Irún</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/galeria_IMG_9399.webp</image:loc>
-            <image:title>Fachada del taller Arretxe Motos en Irún, Gipuzkoa</image:title>
         </image:image>
     </url>
     <url>
@@ -31,6 +24,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/taller-motos-irun.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/taller-motos-irun.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/taller-motos-irun.html"/>
     </url>
     <url>
@@ -39,240 +33,81 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/reservas.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/reservas.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/reservas.html"/>
     </url>
 
-    <!-- Motos Honda -->
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-forza-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/forza125cc.webp</image:loc>
-            <image:title>Honda Forza 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-forza-350.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/forza350cc.webp</image:loc>
-            <image:title>Honda Forza 350 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-pcx-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/pcx125cc.webp</image:loc>
-            <image:title>Honda PCX 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-pcx-dx-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/pcxDX125.webp</image:loc>
-            <image:title>Honda PCX DX 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-gb-350-s.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/GB%20350CC%20S.webp</image:loc>
-            <image:title>Honda GB 350 S - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-adv-350.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/adv350.webp</image:loc>
-            <image:title>Honda ADV 350 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-cb-125-f.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/cb125f.webp</image:loc>
-            <image:title>Honda CB 125 F - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-cb-125-r.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/hondacb125r.webp</image:loc>
-            <image:title>Honda CB 125 R - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-vision-110.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/hondavision110.webp</image:loc>
-            <image:title>Honda Vision 110 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-sh-mode-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/shmode125.webp</image:loc>
-            <image:title>Honda SH Mode 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-sh-350-sport.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/sh350sport.webp</image:loc>
-            <image:title>Honda SH 350 Sport - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/honda-sh-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/honda/hondaSH125.webp</image:loc>
-            <image:title>Honda SH 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
+    <!-- Motos Honda ES -->
+    <url><loc>https://www.motosarretxe.com/motos/honda-forza-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-forza-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-forza-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-forza-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-forza-350.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-forza-350.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-forza-350.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-forza-350.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-pcx-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-pcx-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-pcx-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-pcx-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-pcx-dx-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-pcx-dx-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-pcx-dx-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-pcx-dx-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-gb-350-s.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-gb-350-s.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-gb-350-s.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-gb-350-s.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-adv-350.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-adv-350.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-adv-350.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-adv-350.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-cb-125-f.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-cb-125-f.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-cb-125-f.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-cb-125-f.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-cb-125-r.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-cb-125-r.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-cb-125-r.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-cb-125-r.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-vision-110.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-vision-110.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-vision-110.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-vision-110.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-sh-mode-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-sh-mode-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-sh-mode-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-sh-mode-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-sh-350-sport.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-sh-350-sport.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-sh-350-sport.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-sh-350-sport.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/honda-sh-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-sh-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-sh-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/honda-sh-125.html"/></url>
 
-    <!-- Motos SYM -->
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-fugue-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/fugue125.webp</image:loc>
-            <image:title>SYM Fugue 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-jet-14-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/sym-jet-14-125.webp</image:loc>
-            <image:title>SYM Jet 14 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-symphony-sr-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/sym-symphony-sr-125.webp</image:loc>
-            <image:title>SYM Symphony SR 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-symphony-st-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/sym-symphony-st-125.webp</image:loc>
-            <image:title>SYM Symphony ST 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-adx-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/adx%20125%20sym.webp</image:loc>
-            <image:title>SYM ADX 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-jet-evo-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/jet%20evo%20125.webp</image:loc>
-            <image:title>SYM Jet EVO 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-joymax-125.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/joymax%20125.webp</image:loc>
-            <image:title>SYM Joymax 125 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-joymax-z-300.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/joymax%20z%20300.webp</image:loc>
-            <image:title>SYM Joymax Z 300 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/motos/sym-adxtg-400.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://www.motosarretxe.com/MOTOSPNG/sym/adxtg%20400.webp</image:loc>
-            <image:title>SYM ADXTG 400 - Arretxe Motos Irún</image:title>
-        </image:image>
-    </url>
+    <!-- Motos SYM ES -->
+    <url><loc>https://www.motosarretxe.com/motos/sym-fugue-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-fugue-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-fugue-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-fugue-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-jet-14-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-jet-14-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-jet-14-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-jet-14-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-symphony-sr-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-symphony-sr-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-symphony-sr-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-symphony-sr-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-symphony-st-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-symphony-st-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-symphony-st-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-symphony-st-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-adx-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-adx-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-adx-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-adx-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-jet-evo-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-jet-evo-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-jet-evo-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-jet-evo-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-joymax-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-joymax-125.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-joymax-125.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-joymax-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-joymax-z-300.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-joymax-z-300.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-joymax-z-300.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-joymax-z-300.html"/></url>
+    <url><loc>https://www.motosarretxe.com/motos/sym-adxtg-400.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-adxtg-400.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-adxtg-400.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/motos/sym-adxtg-400.html"/></url>
 
-    <!-- Páginas legales -->
+    <!-- Páginas legales ES -->
+    <url><loc>https://www.motosarretxe.com/aviso-legal.html</loc><lastmod>2026-05-14</lastmod><changefreq>yearly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/aviso-legal.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/aviso-legal.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/aviso-legal.html"/></url>
+    <url><loc>https://www.motosarretxe.com/privacidad.html</loc><lastmod>2026-05-14</lastmod><changefreq>yearly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/privacidad.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/privacidad.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/privacidad.html"/></url>
+    <url><loc>https://www.motosarretxe.com/cookies.html</loc><lastmod>2026-05-14</lastmod><changefreq>yearly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/cookies.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/cookies.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/cookies.html"/></url>
+
+    <!-- ========== FRANÇAIS ========== -->
     <url>
-        <loc>https://www.motosarretxe.com/aviso-legal.html</loc>
+        <loc>https://www.motosarretxe.com/fr/</loc>
         <lastmod>2026-05-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/"/>
     </url>
-    <url>
-        <loc>https://www.motosarretxe.com/privacidad.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://www.motosarretxe.com/cookies.html</loc>
-        <lastmod>2026-05-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
+    <url><loc>https://www.motosarretxe.com/fr/taller-motos-irun.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/taller-motos-irun.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/taller-motos-irun.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/taller-motos-irun.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/reservas.html</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/reservas.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/reservas.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.motosarretxe.com/reservas.html"/></url>
+
+    <!-- Motos Honda FR -->
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-forza-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-forza-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-forza-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-forza-350.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-forza-350.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-forza-350.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-pcx-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-pcx-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-pcx-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-pcx-dx-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-pcx-dx-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-pcx-dx-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-gb-350-s.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-gb-350-s.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-gb-350-s.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-adv-350.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-adv-350.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-adv-350.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-cb-125-f.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-cb-125-f.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-cb-125-f.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-cb-125-r.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-cb-125-r.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-cb-125-r.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-vision-110.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-vision-110.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-vision-110.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-sh-mode-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-sh-mode-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-sh-mode-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-sh-350-sport.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-sh-350-sport.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-sh-350-sport.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/honda-sh-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/honda-sh-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/honda-sh-125.html"/></url>
+
+    <!-- Motos SYM FR -->
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-fugue-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-fugue-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-fugue-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-jet-14-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-jet-14-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-jet-14-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-symphony-sr-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-symphony-sr-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-symphony-sr-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-symphony-st-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-symphony-st-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-symphony-st-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-adx-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-adx-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-adx-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-jet-evo-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-jet-evo-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-jet-evo-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-joymax-125.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-joymax-125.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-joymax-125.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-joymax-z-300.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-joymax-z-300.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-joymax-z-300.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/motos/sym-adxtg-400.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/motos/sym-adxtg-400.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/motos/sym-adxtg-400.html"/></url>
+
+    <!-- Legales FR -->
+    <url><loc>https://www.motosarretxe.com/fr/aviso-legal.html</loc><lastmod>2026-05-14</lastmod><changefreq>yearly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/aviso-legal.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/aviso-legal.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/privacidad.html</loc><lastmod>2026-05-14</lastmod><changefreq>yearly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/privacidad.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/privacidad.html"/></url>
+    <url><loc>https://www.motosarretxe.com/fr/cookies.html</loc><lastmod>2026-05-14</lastmod><changefreq>yearly</changefreq><priority>0.3</priority><xhtml:link rel="alternate" hreflang="fr" href="https://www.motosarretxe.com/fr/cookies.html"/><xhtml:link rel="alternate" hreflang="es" href="https://www.motosarretxe.com/cookies.html"/></url>
+
 </urlset>
