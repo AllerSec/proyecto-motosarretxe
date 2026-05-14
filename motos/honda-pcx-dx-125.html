@@ -21,6 +21,23 @@
     <meta property="og:image:alt" content="Honda PCX DX 125 versión Deluxe scooter 125cc">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Arretxe Motos">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Honda PCX DX 125 en Irún | Arretxe Motos — Distribuidor Oficial">
+    <meta name="twitter:description" content="PCX 125 versión Deluxe con ABS, cuadro TFT, Honda Smart Key y acabados superiores. Distribuidor oficial Honda en Irún, Gipuzkoa. Tel: 943 62 59 05.">
+    <meta name="twitter:image" content="https://www.motosarretxe.com/MOTOSPNG/honda/pcxDX125.webp">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="ES-SS">
+    <meta name="geo.placename" content="Irún, Gipuzkoa">
+    <meta name="geo.position" content="43.3407;-1.7889">
+    <meta name="ICBM" content="43.3407, -1.7889">
+    <meta name="author" content="Arretxe Motos y Maquinaria Agricola S.L.">
+
+    <!-- Theme color y touch icon -->
+    <link rel="apple-touch-icon" href="../LOGO.png">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#CC0000">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a">
 
     <link rel="preload" as="image" href="../MOTOSPNG/honda/pcxDX125.webp" fetchpriority="high">
 
@@ -30,7 +47,7 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.motosarretxe.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Motos Honda", "item": "https://www.motosarretxe.com/index.html#motos"},
+            {"@type": "ListItem", "position": 2, "name": "Motos Honda", "item": "https://www.motosarretxe.com/#motos"},
             {"@type": "ListItem", "position": 3, "name": "Honda PCX DX 125", "item": "https://www.motosarretxe.com/motos/honda-pcx-dx-125.html"}
         ]
     }
@@ -132,6 +149,21 @@
         .footer-bottom { border-top: 1px solid #222; padding: 20px 0; text-align: center; font-size: 0.8rem; color: #555; max-width: 1200px; margin: 0 auto; }
         @media (max-width: 768px) { .nav-links { display: none; } .burger { display: flex; } .product-hero-inner { grid-template-columns: 1fr; gap: 32px; } .features-grid { grid-template-columns: 1fr 1fr; gap: 16px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } .cta-phone { font-size: 1.6rem; } }
         @media (max-width: 480px) { .features-grid { grid-template-columns: 1fr; } .product-btns { flex-direction: column; } }
+        /* Motos relacionadas */
+        .related-section { background: var(--gray-light); padding: 60px 20px; }
+        .related-inner { max-width: 1200px; margin: 0 auto; }
+        .related-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: #111; margin-bottom: 8px; text-align: center; }
+        .related-title span { color: var(--red); }
+        .related-subtitle { color: var(--gray); text-align: center; margin-bottom: 32px; font-size: 0.95rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .related-card { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform var(--transition); display: flex; flex-direction: column; }
+        .related-card:hover { transform: translateY(-4px); }
+        .related-card img { width: 100%; aspect-ratio: 16/9; object-fit: contain; background: #fafafa; padding: 12px; }
+        .related-card-body { padding: 16px; text-align: center; flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; }
+        .related-card h3 { font-size: 1rem; font-weight: 700; color: #111; }
+        .related-card a.btn-red-sm { display: inline-block; background: var(--red); color: #fff; padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; transition: background var(--transition); }
+        .related-card a.btn-red-sm:hover { background: var(--red-dark); }
+        @media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -145,23 +177,23 @@
     </div>
     <header class="site-header">
         <nav class="navbar" role="navigation" aria-label="Navegación principal">
-            <a href="../index.html" class="navbar-logo" aria-label="Arretxe Motos — Inicio"><img src="../LOGO.webp" alt="Arretxe Motos" width="200" height="31" loading="eager"></a>
+            <a href="../" class="navbar-logo" aria-label="Arretxe Motos — Inicio"><img src="../LOGO.webp" alt="Arretxe Motos" width="200" height="31" loading="eager"></a>
             <div class="nav-links">
-                <a href="../index.html#inicio">Inicio</a>
-                <a href="../index.html#motos" class="active">Motos</a>
-                <a href="../index.html#contacto">Contacto</a>
+                <a href="../#inicio">Inicio</a>
+                <a href="../#motos" class="active">Motos</a>
+                <a href="../#contacto">Contacto</a>
                 <a href="../reservas.html">Reservas</a>
             </div>
             <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         </nav>
         <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
-            <a href="../index.html#inicio">Inicio</a><a href="../index.html#motos">Motos</a><a href="../index.html#contacto">Contacto</a><a href="../reservas.html">Reservas</a>
+            <a href="../#inicio">Inicio</a><a href="../#motos">Motos</a><a href="../#contacto">Contacto</a><a href="../reservas.html">Reservas</a>
         </nav>
     </header>
     <div class="breadcrumb" aria-label="Ruta de navegación">
         <div class="breadcrumb-inner">
-            <a href="../index.html">Inicio</a><span aria-hidden="true">›</span>
-            <a href="../index.html#motos">Motos Honda</a><span aria-hidden="true">›</span>
+            <a href="../">Inicio</a><span aria-hidden="true">›</span>
+            <a href="../#motos">Motos Honda</a><span aria-hidden="true">›</span>
             <strong>Honda PCX DX 125</strong>
         </div>
     </div>
@@ -176,7 +208,7 @@
                 <p class="product-desc">La versión Deluxe del icónico PCX 125 eleva la experiencia al máximo nivel. Con ABS de serie, cuadro TFT a color, Honda Smart Key y acabados premium en cada detalle, el PCX DX 125 es la elección de quienes no quieren renunciar a nada en su scooter urbano 125cc.</p>
                 <div class="product-btns">
                     <a href="tel:+34943625905" class="btn-primary" aria-label="Llamar para consultar precio Honda PCX DX 125">&#128222; Consultar precio</a>
-                    <a href="../index.html#contacto" class="btn-outline-dark">Contactar</a>
+                    <a href="../#contacto" class="btn-outline-dark">Contactar</a>
                 </div>
             </div>
         </div>
@@ -207,7 +239,7 @@
         <h2 id="cta-title">¿Te interesa la Honda PCX DX 125?</h2>
         <p>Llámanos y te informamos sobre precio, financiación y disponibilidad de la versión Deluxe.</p>
         <a href="tel:+34943625905" class="cta-phone" aria-label="Llamar a Arretxe Motos">943 62 59 05</a><br>
-        <a href="../index.html#contacto" class="btn-white">Enviar consulta</a>
+        <a href="../#contacto" class="btn-white">Enviar consulta</a>
     </section>
     <footer class="site-footer" role="contentinfo">
         <div class="footer-grid">
@@ -218,7 +250,7 @@
             <div class="footer-col">
                 <h4>Navegación</h4>
                 <nav class="footer-links" aria-label="Pie de página">
-                    <a href="../index.html#inicio">Inicio</a><a href="../index.html#motos">Motos</a><a href="../index.html#servicios">Servicios</a><a href="../index.html#contacto">Contacto</a><a href="../reservas.html">Reservas</a>
+                    <a href="../#inicio">Inicio</a><a href="../#motos">Motos</a><a href="../#servicios">Servicios</a><a href="../#contacto">Contacto</a><a href="../reservas.html">Reservas</a>
                 </nav>
                 <h4 style="margin-top:20px">Legal</h4>
                 <nav class="footer-links" aria-label="Pie legal">

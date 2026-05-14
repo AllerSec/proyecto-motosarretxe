@@ -22,6 +22,23 @@
     <meta property="og:image:alt" content="Honda Forza 125 scooter premium 125cc">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Arretxe Motos">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Honda Forza 125 en Irún | Arretxe Motos — Distribuidor Oficial">
+    <meta name="twitter:description" content="Scooter premium 125cc con tecnología Honda Smart Key y gran equipamiento. Distribuidor oficial en Irún, Gipuzkoa. Consulta precio en 943 62 59 05.">
+    <meta name="twitter:image" content="https://www.motosarretxe.com/MOTOSPNG/honda/forza125cc.webp">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="ES-SS">
+    <meta name="geo.placename" content="Irún, Gipuzkoa">
+    <meta name="geo.position" content="43.3407;-1.7889">
+    <meta name="ICBM" content="43.3407, -1.7889">
+    <meta name="author" content="Arretxe Motos y Maquinaria Agricola S.L.">
+
+    <!-- Theme color y touch icon -->
+    <link rel="apple-touch-icon" href="../LOGO.png">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#CC0000">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a">
 
     <!-- Preload imagen principal -->
     <link rel="preload" as="image" href="../MOTOSPNG/honda/forza125cc.webp" fetchpriority="high">
@@ -33,7 +50,7 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.motosarretxe.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Motos Honda", "item": "https://www.motosarretxe.com/index.html#motos"},
+            {"@type": "ListItem", "position": 2, "name": "Motos Honda", "item": "https://www.motosarretxe.com/#motos"},
             {"@type": "ListItem", "position": 3, "name": "Honda Forza 125", "item": "https://www.motosarretxe.com/motos/honda-forza-125.html"}
         ]
     }
@@ -179,6 +196,21 @@
             .product-btns { flex-direction: column; }
             .product-btns .btn-primary, .product-btns .btn-outline-dark { text-align: center; }
         }
+        /* Motos relacionadas */
+        .related-section { background: var(--gray-light); padding: 60px 20px; }
+        .related-inner { max-width: 1200px; margin: 0 auto; }
+        .related-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: #111; margin-bottom: 8px; text-align: center; }
+        .related-title span { color: var(--red); }
+        .related-subtitle { color: var(--gray); text-align: center; margin-bottom: 32px; font-size: 0.95rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .related-card { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform var(--transition); display: flex; flex-direction: column; }
+        .related-card:hover { transform: translateY(-4px); }
+        .related-card img { width: 100%; aspect-ratio: 16/9; object-fit: contain; background: #fafafa; padding: 12px; }
+        .related-card-body { padding: 16px; text-align: center; flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; }
+        .related-card h3 { font-size: 1rem; font-weight: 700; color: #111; }
+        .related-card a.btn-red-sm { display: inline-block; background: var(--red); color: #fff; padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; transition: background var(--transition); }
+        .related-card a.btn-red-sm:hover { background: var(--red-dark); }
+        @media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -208,13 +240,13 @@
     <!-- HEADER -->
     <header class="site-header">
         <nav class="navbar" role="navigation" aria-label="Navegación principal">
-            <a href="../index.html" class="navbar-logo" aria-label="Arretxe Motos — Inicio">
+            <a href="../" class="navbar-logo" aria-label="Arretxe Motos — Inicio">
                 <img src="../LOGO.webp" alt="Arretxe Motos" width="200" height="31" loading="eager">
             </a>
             <div class="nav-links">
-                <a href="../index.html#inicio">Inicio</a>
-                <a href="../index.html#motos" class="active">Motos</a>
-                <a href="../index.html#contacto">Contacto</a>
+                <a href="../#inicio">Inicio</a>
+                <a href="../#motos" class="active">Motos</a>
+                <a href="../#contacto">Contacto</a>
                 <a href="../reservas.html">Reservas</a>
             </div>
             <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
@@ -222,9 +254,9 @@
             </button>
         </nav>
         <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
-            <a href="../index.html#inicio">Inicio</a>
-            <a href="../index.html#motos">Motos</a>
-            <a href="../index.html#contacto">Contacto</a>
+            <a href="../#inicio">Inicio</a>
+            <a href="../#motos">Motos</a>
+            <a href="../#contacto">Contacto</a>
             <a href="../reservas.html">Reservas</a>
         </nav>
     </header>
@@ -232,9 +264,9 @@
     <!-- BREADCRUMB -->
     <div class="breadcrumb" aria-label="Ruta de navegación">
         <div class="breadcrumb-inner">
-            <a href="../index.html">Inicio</a>
+            <a href="../">Inicio</a>
             <span aria-hidden="true">›</span>
-            <a href="../index.html#motos">Motos Honda</a>
+            <a href="../#motos">Motos Honda</a>
             <span aria-hidden="true">›</span>
             <strong>Honda Forza 125</strong>
         </div>
@@ -258,7 +290,7 @@
                 <p class="product-desc">El scooter premium 125cc que redefine la movilidad urbana. Con tecnología Honda Smart Key, cuadro TFT de última generación y motor eSP+ de alta eficiencia, el Forza 125 combina conectividad, confort y estilo para quienes exigen lo mejor en cada trayecto.</p>
                 <div class="product-btns">
                     <a href="tel:+34943625905" class="btn-primary" aria-label="Llamar para consultar precio Honda Forza 125">&#128222; Consultar precio</a>
-                    <a href="../index.html#contacto" class="btn-outline-dark">Contactar</a>
+                    <a href="../#contacto" class="btn-outline-dark">Contactar</a>
                 </div>
             </div>
         </div>
@@ -313,6 +345,37 @@
             <p>Si estás buscando una Honda Forza 125 en Irún o en el entorno de la frontera con Francia, Arretxe Motos es tu punto de referencia. Con más de 58 años como especialistas en motos y scooters, ofrecemos un servicio posventa integral: revisiones, cambio de neumáticos, recambios originales y asesoramiento técnico especializado. Visítanos o llámanos al 943 62 59 05 para conocer el precio actual, disponibilidad y opciones de financiación.</p>
         </div>
     </section>
+    <!-- MOTOS RELACIONADAS -->
+    <section class="related-section" aria-labelledby="related-title">
+        <div class="related-inner">
+            <h2 class="related-title" id="related-title">Otras motos <span>Honda</span> en Arretxe Motos</h2>
+            <p class="related-subtitle">Descubre más modelos disponibles en nuestro taller de Irún</p>
+            <div class="related-grid">
+                <article class="related-card">
+                    <img src="../MOTOSPNG/honda/forza350cc.webp" alt="Honda Forza 350 en Irún - Arretxe Motos" loading="lazy" decoding="async" width="533" height="300">
+                    <div class="related-card-body">
+                        <h3>Honda Forza 350</h3>
+                        <a href="honda-forza-350.html" class="btn-red-sm" aria-label="Ver Honda Forza 350">Ver modelo</a>
+                    </div>
+                </article>
+                <article class="related-card">
+                    <img src="../MOTOSPNG/honda/pcx125cc.webp" alt="Honda PCX 125 en Irún - Arretxe Motos" loading="lazy" decoding="async" width="533" height="300">
+                    <div class="related-card-body">
+                        <h3>Honda PCX 125</h3>
+                        <a href="honda-pcx-125.html" class="btn-red-sm" aria-label="Ver Honda PCX 125">Ver modelo</a>
+                    </div>
+                </article>
+                <article class="related-card">
+                    <img src="../MOTOSPNG/honda/pcxDX125.webp" alt="Honda PCX DX 125 en Irún - Arretxe Motos" loading="lazy" decoding="async" width="533" height="300">
+                    <div class="related-card-body">
+                        <h3>Honda PCX DX 125</h3>
+                        <a href="honda-pcx-dx-125.html" class="btn-red-sm" aria-label="Ver Honda PCX DX 125">Ver modelo</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
 
     <!-- CTA -->
     <section class="cta-section" aria-labelledby="cta-title">
@@ -320,7 +383,7 @@
         <p>Llámanos y te informamos sin compromiso sobre precio, disponibilidad y financiación.</p>
         <a href="tel:+34943625905" class="cta-phone" aria-label="Llamar a Arretxe Motos">943 62 59 05</a>
         <br>
-        <a href="../index.html#contacto" class="btn-white">Enviar consulta</a>
+        <a href="../#contacto" class="btn-white">Enviar consulta</a>
     </section>
 
     <!-- FOOTER -->
@@ -333,10 +396,10 @@
             <div class="footer-col">
                 <h4>Navegación</h4>
                 <nav class="footer-links" aria-label="Pie de página">
-                    <a href="../index.html#inicio">Inicio</a>
-                    <a href="../index.html#motos">Motos</a>
-                    <a href="../index.html#servicios">Servicios</a>
-                    <a href="../index.html#contacto">Contacto</a>
+                    <a href="../#inicio">Inicio</a>
+                    <a href="../#motos">Motos</a>
+                    <a href="../#servicios">Servicios</a>
+                    <a href="../#contacto">Contacto</a>
                     <a href="../reservas.html">Reservas</a>
                 </nav>
                 <h4 style="margin-top:20px">Legal</h4>

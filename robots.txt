@@ -8,6 +8,7 @@ Disallow: /.git/
 Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /.htaccess
+Disallow: /*.json$
 
 # Googlebot - acceso completo
 User-agent: Googlebot
@@ -17,15 +18,70 @@ Allow: /*.js$
 Allow: /*.webp$
 Allow: /*.jpg$
 Allow: /*.png$
+Allow: /*.svg$
 Disallow: /hero.mp4
 
 # Googlebot-Image - permitir todas las imagenes
 User-agent: Googlebot-Image
 Allow: /
+Allow: /*.webp$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Googlebot-Video
+User-agent: Googlebot-Video
+Allow: /
 
 # Bingbot
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# AI crawlers - permitidos (sitio local, beneficio en respuestas IA)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
 
 # Sitemap
 Sitemap: https://www.motosarretxe.com/sitemap.xml
+
+# Host
+Host: https://www.motosarretxe.com

@@ -1,0 +1,12 @@
+/* TEAM */
+Negocio: Arretxe Motos y Maquinaria Agricola S.L.
+Contacto: motosarretxe [at] gmail.com
+Teléfono: +34 943 62 59 05
+Ubicación: Salvador Echeandia Kalea, 12, BJ 1, 20304 Irún, Gipuzkoa, España
+
+/* SITE */
+Última actualización: 2026/05/14
+Idioma: Español (es)
+Estándares: HTML5, CSS3, Schema.org JSON-LD
+Componentes: Vanilla JS, sin frameworks
+Software: Apache + .htaccess
