@@ -7,7 +7,6 @@ Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /package.json
 Disallow: /package-lock.json
-Disallow: /.htaccess
 Disallow: /*.json$
 
 # Googlebot - acceso completo

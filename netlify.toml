@@ -1,0 +1,110 @@
+# ==========================================================================
+# Arretxe Motos - Configuracion Netlify (redirects, headers, SEO)
+# ==========================================================================
+
+# --------------------------------------------------------------------------
+# 1. REDIRECCIONES 301 - Canonicalizacion
+# --------------------------------------------------------------------------
+
+# Forzar dominio canonico www en HTTPS (un solo salto)
+[[redirects]]
+  from = "https://motosarretxe.com/*"
+  to = "https://www.motosarretxe.com/:splat"
+  status = 301
+  force = true
+
+# /index.html -> raiz (canonica)
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# /fr/index.html -> /fr/
+[[redirects]]
+  from = "/fr/index.html"
+  to = "/fr/"
+  status = 301
+  force = true
+
+# URLs sin .html -> con .html (canonicas) para evitar duplicados
+[[redirects]]
+  from = "/motos/:slug"
+  to = "/motos/:slug.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/motos/:slug"
+  to = "/fr/motos/:slug.html"
+  status = 301
+  force = false
+
+# --------------------------------------------------------------------------
+# 2. CABECERAS DE SEGURIDAD
+# --------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# --------------------------------------------------------------------------
+# 3. CACHE (Core Web Vitals)
+# --------------------------------------------------------------------------
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# --------------------------------------------------------------------------
+# 4. SITEMAP / ROBOTS sin cache largo
+# --------------------------------------------------------------------------
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
