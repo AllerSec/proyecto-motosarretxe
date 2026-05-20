@@ -881,7 +881,11 @@
                 <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
                     <label for="fwebsite">Ne pas remplir</label>
                     <input type="text" id="fwebsite" name="website" tabindex="-1" autocomplete="off">
+                    <label for="fcompany">Ne pas remplir</label>
+                    <input type="text" id="fcompany" name="company" tabindex="-1" autocomplete="off">
                 </div>
+                <input type="hidden" id="fts" name="ts" value="">
+                <input type="hidden" name="hp_check" value="ok">
                 <div class="form-group">
                     <input type="text" id="fname" name="name" autocomplete="name" required>
                     <label for="fname" data-i18n="contact.form.name">Votre nom</label>
@@ -1632,6 +1636,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 /* =============================================
    CONTACT FORM SUBMIT
    ============================================= */
+(function(){ const ts = document.getElementById('fts'); if (ts) ts.value = Date.now(); })();
+
+const SPAM_KEYWORDS = /\b(seo|ranking|backlink|campaign|crypto|bitcoin|investment|loan|viagra|casino|porn|escort|guarantee[d]?\s+(traffic|leads|sales|results)|first\s+page\s+of\s+google|24\s*hours?|targeted\s+visitors)\b/i;
+const NON_LATIN = /[Ѐ-ӿ֐-׿؀-ۿ一-鿿]/;
+
 function submitForm(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
@@ -1643,13 +1652,22 @@ function submitForm(e) {
     btn.disabled = true;
 
     const formData = new FormData(form);
-    if (formData.get('website')) { form.reset(); form.style.display = 'none'; success.style.display = 'block'; return; }
+    if (formData.get('website') || formData.get('company')) { form.reset(); form.style.display = 'none'; success.style.display = 'block'; return; }
+    const ts = parseInt(formData.get('ts'), 10) || 0;
+    if (ts && (Date.now() - ts) < 3000) { form.reset(); form.style.display = 'none'; success.style.display = 'block'; return; }
+    const msg = (formData.get('message') || '') + ' ' + (formData.get('name') || '');
+    if (SPAM_KEYWORDS.test(msg) || NON_LATIN.test(msg)) { form.reset(); form.style.display = 'none'; success.style.display = 'block'; return; }
+
     const payload = {
         nombre:    formData.get('name'),
         apellidos: '',
         email:     formData.get('email'),
         telefono:  formData.get('phone') || 'No indicado',
-        mensaje:   formData.get('message')
+        mensaje:   formData.get('message'),
+        website:   formData.get('website') || '',
+        company:   formData.get('company') || '',
+        ts:        ts,
+        hp_check:  formData.get('hp_check') || ''
     };
 
     fetch('https://script.google.com/macros/s/AKfycbxsn9c0ND9LAgEFfzcdml8x3KhyeDSE66nulzWQxEsoTd0_-Nv5DQNdO3fxEuqOBcnJ/exec', {
