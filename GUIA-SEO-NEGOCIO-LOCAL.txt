@@ -1,0 +1,321 @@
+================================================================================
+ GUÍA COMPLETA DE SEO PARA UNA WEB DE NEGOCIO LOCAL (2026)
+ Todo lo que una web local necesita para APARECER en Google y en las IA
+ (Google AI Overviews, ChatGPT, Perplexity, Gemini, Apple/Google Maps)
+================================================================================
+
+ Caso de referencia: Motos Arretxe — Taller Honda/SYM en Irún (Gipuzkoa)
+ Web: https://www.motosarretxe.com  ·  ES + FR  ·  HTML estático en Netlify
+
+ CÓMO LEER ESTA GUÍA
+ -------------------
+   [HECHO]      = ya está implementado en esta web.
+   [HECHO+]     = implementado en esta sesión (rediseño / SEO IA).
+   [PENDIENTE]  = falta y depende de un dato o acción del dueño del negocio.
+   [OPCIONAL]   = recomendable a futuro, no urgente.
+
+ Está ordenado por PRIORIDAD: lo de arriba es lo que más mueve la aguja.
+
+
+################################################################################
+ BLOQUE 0 — LA REGLA DE ORO DEL SEO LOCAL EN 2026
+################################################################################
+
+ El 50% de las búsquedas terminan en "cero clics": la IA da la respuesta en la
+ propia pantalla. Por eso ya no se escribe para que la gente "lea", sino para que:
+
+   1. Las IA ENCUENTREN el negocio (datos estructurados claros).
+   2. Las IA CONFÍEN en él (pruebas de que es real: E-E-A-T).
+   3. Las IA lo RECOMIENDEN (respuestas atómicas + reseñas con palabras clave).
+
+ Las 3 patas del negocio local moderno:
+   A) SEO técnico clásico impecable (que Google pueda rastrear e indexar rápido).
+   B) SEO para IA / GEO-AEO (respuestas atómicas, FAQ schema, llms.txt).
+   C) SEO local puro (Google Business Profile + reseñas + mapas).
+
+
+################################################################################
+ BLOQUE 1 — FUNDAMENTOS TÉCNICOS (sin esto, nada funciona)
+################################################################################
+
+ 1.1  DOMINIO Y HTTPS
+   [HECHO] Dominio propio con HTTPS en todo el sitio.
+   [HECHO] Certificado SSL válido, sin contenido mixto.
+   [HECHO] Redirección 301 de la versión sin-www a www (un solo salto).
+   [HECHO] HSTS (Strict-Transport-Security) en cabeceras.
+   --> Por qué: Google no cita ni rankea sitios inseguros.
+
+ 1.2  RASTREO (robots.txt)
+   [HECHO] robots.txt que permite el rastreo de todo lo importante.
+   [HECHO] Bloqueo de carpetas técnicas (/node_modules/, /.git/, *.json).
+   [HECHO] Permite explícitamente CSS/JS/imágenes a Googlebot (clave para que
+           Google "vea" la web como un usuario).
+   [HECHO] Permite los crawlers de IA: GPTBot, OAI-SearchBot, ChatGPT-User,
+           PerplexityBot, ClaudeBot, Google-Extended, Applebot, Bingbot...
+   [HECHO+] Referencia a llms.txt y llms-full.txt dentro de robots.txt.
+   --> Por qué: si bloqueas a los bots de IA, no apareces en sus respuestas.
+
+ 1.3  INDEXACIÓN (sitemap.xml)
+   [HECHO] sitemap.xml con todas las URLs canónicas (54 URLs).
+   [HECHO] lastmod, changefreq y priority coherentes.
+   [HECHO] Solo URLs indexables (sin duplicados ni páginas técnicas).
+   [PENDIENTE] Enviar el sitemap en Google Search Console y Bing Webmaster Tools.
+               (Acción manual del dueño: dar de alta la propiedad y subir sitemap).
+   [OPCIONAL] Actualizar el <lastmod> tras cada cambio grande de la web.
+
+ 1.4  CANONICALIZACIÓN (evitar contenido duplicado)
+   [HECHO] Etiqueta <link rel="canonical"> en todas las páginas, auto-referenciada.
+   [HECHO] Redirección /index.html -> / y /fr/index.html -> /fr/.
+   [HECHO] Redirección de URLs sin .html a la versión con .html.
+   --> Por qué: el contenido duplicado divide la fuerza SEO entre varias URLs.
+
+ 1.5  VELOCIDAD Y CORE WEB VITALS (Google penaliza lo lento)
+   [HECHO] Imágenes en formato WebP (mucho más ligeras que JPG/PNG).
+   [HECHO] width/height declarados en imágenes (evita saltos de maquetación, CLS).
+   [HECHO] CSS crítico embebido (inline) — sin petición extra que bloquee el render.
+   [HECHO] Lazy-loading de imágenes y del vídeo del hero.
+   [HECHO] Lazy-load del iframe del mapa (no carga Google Maps hasta que se pide).
+   [HECHO] Cabeceras de caché agresivas para imágenes/CSS/JS (max-age largo).
+   [HECHO+] Carga de fuentes NO bloqueante (preconnect + preload + media=print
+            onload) — la tipografía nueva no frena el primer pintado.
+   Objetivos: LCP < 2,5 s · INP < 200 ms · CLS < 0,1
+   [PENDIENTE] Medir en PageSpeed Insights tras publicar y ajustar si hace falta.
+
+ 1.6  MÓVIL (la mayoría del tráfico local es móvil)
+   [HECHO]  Diseño 100% responsive (sin sitio "m." aparte).
+   [HECHO]  Viewport configurado, sin desactivar el zoom.
+   [HECHO+] Verificado a 375px: menú hamburguesa, rejillas a 1 columna, sin scroll
+            horizontal, botones a ancho completo y táctiles (>=44px).
+   --> Por qué: Google indexa con "mobile-first": juzga la versión móvil.
+
+ 1.7  ARQUITECTURA Y ENLAZADO INTERNO
+   [HECHO]  Páginas importantes a <=3 clics de la home.
+   [HECHO]  Fichas de moto enlazadas desde la home y entre sí (modelos relacionados).
+   [HECHO]  Breadcrumbs (migas de pan) visibles y con schema.
+   [PENDIENTE/RECOMENDADO] Enlazar la página "Taller de Motos en Irún"
+            (taller-motos-irun.html) desde el menú principal de la home.
+            AHORA es casi huérfana (solo se llega por sitemap) y es la página con
+            más valor SEO local y E-E-A-T (FAQ, "desde 1966", servicios). Es el
+            cambio de MAYOR impacto/esfuerzo que queda. (Es cambio de navegación,
+            por eso no se ha hecho sin tu visto bueno.)
+
+
+################################################################################
+ BLOQUE 2 — SEO ON-PAGE (cada página bien optimizada)
+################################################################################
+
+ 2.1  TITLE (lo más importante on-page)
+   [HECHO] Title único por página, 50-60 caracteres.
+   [HECHO] Keyword principal al inicio + marca al final.
+           Ej: "Taller de Motos en Irún | Arretxe Motos — Desde 1966"
+   [HECHO] Cada ficha de moto con su title específico ([Modelo] en Irún | Arretxe).
+
+ 2.2  META DESCRIPTION
+   [HECHO] Descripción única por página, 150-160 caracteres, con keyword + teléfono.
+   --> No posiciona directamente, pero sube el % de clics (CTR) desde Google.
+
+ 2.3  ENCABEZADOS (H1-H6)
+   [HECHO] Un solo H1 por página con la keyword principal.
+   [HECHO] Jerarquía lógica H1 -> H2 -> H3 (no se salta niveles).
+
+ 2.4  CONTENIDO
+   [HECHO] Keyword en las primeras 100 palabras.
+   [HECHO] Texto local real ("Irún", "Gipuzkoa", "Bidasoa", "Hondarribia").
+   [HECHO] Cada ficha con descripción propia (no duplicada entre modelos).
+   [OPCIONAL] Refrescar textos 1-2 veces al año (Google premia lo actualizado).
+
+ 2.5  IMÁGENES
+   [HECHO] Alt text descriptivo en todas las imágenes con significado.
+   [HECHO] Nombres de archivo razonables + WebP + lazy-load.
+   [HECHO+] Iconos en SVG (no emojis): escalables, nítidos, profesionales.
+   [PENDIENTE/E-E-A-T] Sustituir/añadir FOTOS REALES y propias del taller, el
+            equipo y los trabajos (ver Bloque 4). Las fotos de catálogo de
+            Honda/SYM NO aportan autoridad; las propias sí.
+
+ 2.6  URLS
+   [HECHO] URLs legibles, en minúsculas, con guiones, con keyword
+           (ej. /motos/honda-forza-125.html).
+
+
+################################################################################
+ BLOQUE 3 — DATOS ESTRUCTURADOS / SCHEMA (el idioma de las IA)
+################################################################################
+
+ En 2026, las páginas con schema completo tienen ~2,5x más probabilidad de ser
+ citadas por la IA y hasta un 40% más de apariciones en AI Overviews.
+
+ 3.1  SCHEMA DE NEGOCIO LOCAL
+   [HECHO]  LocalBusiness / AutoRepair / MotorcycleDealer en JSON-LD.
+   [HECHO]  NAP completo (Nombre, Dirección, Teléfono) + email + geocoordenadas.
+   [HECHO]  openingHoursSpecification (horario estructurado).
+   [HECHO]  aggregateRating (4,8/5, 66+ reseñas) + 3 reviews con texto.
+   [HECHO]  hasOfferCatalog (catálogo de servicios y de modelos).
+   [HECHO]  brand (Honda, SYM, HJC, LS2, Pirelli, Dunlop, Michelin, Yuasa).
+   [HECHO+] foundingDate "1966", slogan, knowsAbout (temas de expertise),
+            paymentAccepted, currenciesAccepted, knowsLanguage (es/eu/fr).
+   [HECHO+] areaServed ampliado: Irún, Hondarribia, Hendaya, San Sebastián,
+            Gipuzkoa, Comarca del Bidasoa, País Vasco francés.
+   [HECHO+] sameAs ampliado (perfiles que confirman la identidad del negocio).
+
+ 3.2  SCHEMA DE PRODUCTO (fichas de moto)
+   [HECHO]  Product schema por modelo (name, brand, category, image, offers).
+
+ 3.3  SCHEMA DE FAQ  ←  EL DE MAYOR IMPACTO EN IA
+   [HECHO]  FAQPage en home (4 preguntas) y en taller (6 preguntas).
+   [HECHO+] FAQPage en las 42 fichas de moto (21 ES + 21 FR), 4 preguntas cada una,
+            con RESPUESTAS ATÓMICAS de 40-60 palabras (precio, carnet según
+            cilindrada, garantía oficial, cómo reservar).
+   --> Por qué: las páginas con FAQ schema tienen 3,2x más probabilidad de salir
+       en AI Overviews. Es el formato que más citan ChatGPT y Perplexity.
+
+ 3.4  OTROS SCHEMAS
+   [HECHO]  BreadcrumbList (migas), Organization, WebSite (con SearchAction).
+   [PENDIENTE] Validar todo en https://search.google.com/test/rich-results
+               (renderiza JS y confirma que Google lo lee). Validador interno:
+               136 bloques JSON-LD, 0 inválidos, 46 FAQPage. Falta la prueba en vivo.
+
+
+################################################################################
+ BLOQUE 4 — E-E-A-T: DEMOSTRAR QUE EL NEGOCIO ES REAL
+ (Experience, Expertise, Authoritativeness, Trustworthiness)
+################################################################################
+
+ Google y las IA exigen pruebas de que detrás hay un negocio de verdad, sobre todo
+ en sectores donde la gente "se la juega" (motos = seguridad). "Enseñar los recibos".
+
+ 4.1  EXPERIENCIA (lo que más falta y más suma)
+   [HECHO]  Mención de "desde 1966" / "+58 años" en textos y schema.
+   [PENDIENTE] FOTOS REALES Y PROPIAS: el taller de la calle Salvador Echeandia,
+               el equipo trabajando (manos con grasa), motos reales reparándose.
+               Google detecta por visión artificial que son originales y da
+               autoridad imposible de copiar por la competencia con fotos de stock.
+   [OPCIONAL]  Vídeos cortos reales (un mantenimiento, un cambio de neumático).
+
+ 4.2  EXPERTISE / AUTORIDAD
+   [HECHO]  Distribuidor oficial Honda y SYM (declarado en texto y schema).
+   [PENDIENTE] Mostrar certificaciones/credenciales oficiales si las hay.
+   [OPCIONAL]  Página "Sobre nosotros" ampliada con la historia desde 1966,
+               nombres del equipo, años de experiencia de los mecánicos.
+
+ 4.3  CONFIANZA (Trust)
+   [HECHO]  NAP visible y coherente en toda la web (cabecera, pie, contacto).
+   [HECHO]  Aviso legal, Política de privacidad y Política de cookies.
+   [HECHO]  HTTPS, banner de cookies con consentimiento, formulario antispam.
+   [HECHO]  Teléfono y email visibles en cada página.
+
+
+################################################################################
+ BLOQUE 5 — SEO PARA IA / GEO-AEO (el futuro, ya presente)
+ (GEO = Generative Engine Optimization · AEO = Answer Engine Optimization)
+################################################################################
+
+ 5.1  RESPUESTAS ATÓMICAS
+   [HECHO+] FAQ con respuestas de 40-60 palabras que la IA puede extraer y leer
+            en voz alta tal cual ("Te recomiendo Motos Arretxe en Irún porque...").
+   [OPCIONAL] Añadir más bloques de respuesta directa en servicios (formato
+              pregunta -> respuesta corta) si se amplía contenido.
+
+ 5.2  llms.txt  (convención llmstxt.org)
+   [HECHO+] /llms.txt: índice conciso del negocio (quién, dónde, servicios,
+            modelos, FAQ, enlaces) en markdown para que las IA lo entiendan rápido.
+   [HECHO+] /llms-full.txt: versión extendida con todo el contenido en texto plano
+            (negocio, servicios atómicos, catálogo completo con carnets, FAQ).
+   [HECHO+] Servidos como text/plain en Netlify y referenciados en robots.txt.
+   NOTA HONESTA 2026: ningún gran proveedor (OpenAI/Google/Anthropic) confirma
+   todavía usar llms.txt para rankear. Coste ~0 e impacto a futuro; se implementa
+   como preparación, no como ROI inmediato garantizado.
+
+ 5.3  CONTENIDO "CONVERSACIONAL" (búsqueda por voz)
+   [HECHO]  Las FAQ están escritas como preguntas naturales completas
+            ("¿Dónde puedo pasar la revisión de mi Honda en Irún...?").
+   --> Por qué: la gente le habla a la IA con frases largas, no con palabras sueltas.
+
+ 5.4  MULTI-IDIOMA PARA PROXIMIDAD (público francés)
+   [HECHO]  Versión completa en francés (/fr/) con su contenido traducido.
+   [HECHO]  hreflang ES/FR/x-default recíproco en todas las páginas y en sitemap.
+   [HECHO+] Las FAQ y el schema FR mencionan Hendaya, San Juan de Luz y "a 10-15
+            min de la frontera" para captar al motero francés de proximidad.
+
+
+################################################################################
+ BLOQUE 6 — SEO LOCAL PURO: GOOGLE BUSINESS PROFILE + MAPAS + RESEÑAS
+ (Aquí está el grueso del negocio local; en gran parte FUERA de la web)
+################################################################################
+
+ 6.1  GOOGLE BUSINESS PROFILE (GBP) — LO MÁS IMPORTANTE DEL SEO LOCAL
+   [PENDIENTE — ACCIÓN DEL DUEÑO] (lo gestiona el negocio, no la web):
+     - Reclamar y verificar la ficha de Google Business Profile.
+     - NAP idéntico al de la web (Nombre, Dirección, Teléfono EXACTOS).
+     - Categoría principal correcta ("Taller de reparación de motos" /
+       "Concesionario de motos") + categorías secundarias.
+     - Horario actualizado (que coincida con el de la web y el schema).
+     - Fotos reales subidas con frecuencia (taller, equipo, motos, trabajos).
+     - Publicaciones/novedades periódicas y servicios listados.
+     - Sección de preguntas y respuestas atendida.
+   [PENDIENTE] Enlazar la URL real de la ficha GBP en el campo "sameAs" del schema
+               de la web (ahora apunta a la URL genérica de Google Maps).
+               --> Si me pasas la URL del botón "Compartir" de la ficha, la pongo.
+   --> Por qué: la IA y los mapas CRUZAN la web con el GBP; si no coinciden, dudan.
+
+ 6.2  RESEÑAS CON PALABRAS CLAVE  (oro puro para IA + mapas)
+   [PENDIENTE — ESTRATEGIA DEL DUEÑO]:
+     - Pedir reseñas a clientes satisfechos de forma sistemática.
+     - Animar (sin forzar) a que mencionen QUÉ se arregló y DÓNDE:
+       "Llevé mi SYM a Arretxe por un problema en el embrague y en Irún
+        son los mejores" = [Marca + Avería + Ciudad].
+     - Responder a TODAS las reseñas (buenas y malas) con educación.
+   --> Por qué: esa combinación [Marca+Avería+Ciudad] alimenta a mapas e IA para
+       futuras búsquedas de usuarios con el mismo problema.
+
+ 6.3  APPLE MAPS / APPLE BUSINESS CONNECT
+   [PENDIENTE — ACCIÓN DEL DUEÑO]:
+     - Dar de alta el negocio en Apple Business Connect (CarPlay, Siri, Mapas Apple).
+     - Mismo NAP, horario y fotos que en GBP.
+   [HECHO] La web permite a Applebot/Applebot-Extended (robots.txt).
+
+ 6.4  DIRECTORIOS Y CITACIONES (NAP coherente en la web)
+   [PENDIENTE — ACCIÓN DEL DUEÑO]:
+     - Alta/consistencia en Bing Places, páginas amarillas, directorios de motos,
+       guías locales de Gipuzkoa. El NAP debe ser EXACTO en todos.
+   --> Por qué: la coherencia del NAP en la web genera confianza ("citaciones").
+
+
+################################################################################
+ BLOQUE 7 — MEDICIÓN Y MANTENIMIENTO
+################################################################################
+
+   [PENDIENTE — ACCIÓN DEL DUEÑO]:
+     - Google Search Console: dar de alta, verificar, subir sitemap, vigilar
+       cobertura/indexación, consultas y Core Web Vitals.
+     - Bing Webmaster Tools: igual (alimenta también a ChatGPT/Copilot).
+   [HECHO]  Google Analytics 4 instalado (G-SS835NCSDC) en todas las páginas.
+   [OPCIONAL] Revisar trimestralmente: posiciones, reseñas nuevas, fotos GBP,
+              y si aparece el negocio al preguntar a ChatGPT/Gemini/Perplexity
+              "mejor taller de motos en Irún".
+
+
+################################################################################
+ RESUMEN: QUÉ FALTA (acciones del dueño, por prioridad)
+################################################################################
+
+   PRIORIDAD 1 (máximo impacto, fuera de la web):
+     1. Reclamar/optimizar Google Business Profile y pasarme su URL real.
+     2. Estrategia de reseñas con palabras clave [Marca+Avería+Ciudad].
+     3. Dar de alta en Search Console + Bing + Apple Business Connect y subir sitemap.
+
+   PRIORIDAD 2 (en la web, requiere tu material o visto bueno):
+     4. Fotos reales y propias del taller/equipo (E-E-A-T) -> reemplazar stock.
+     5. Enlazar "taller-motos-irun.html" en el menú principal (quitar orfandad).
+     6. Validar el schema en vivo (Rich Results Test) tras publicar.
+
+   PRIORIDAD 3 (mejoras a futuro):
+     7. Vídeos cortos reales, página "Sobre nosotros" ampliada, refresco de textos.
+
+--------------------------------------------------------------------------------
+ Estado de la WEB tras esta intervención: técnicamente muy sólida, diseño
+ moderno, schema completo y optimizada para IA. Lo que más resultado dará ahora
+ es la parte de NEGOCIO (GBP + reseñas + fotos reales), que solo puede hacer
+ el dueño. La web ya está lista para "recibir" ese empuje.
+--------------------------------------------------------------------------------
+ Documento generado para Motos Arretxe. Última actualización: junio 2026.
+================================================================================

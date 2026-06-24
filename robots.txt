@@ -8,6 +8,8 @@ Disallow: /.git/
 Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /*.json$
+Disallow: /GUIA-SEO-NEGOCIO-LOCAL.txt
+Disallow: /google-apps-script-anti-spam.js
 
 # Googlebot - acceso completo
 User-agent: Googlebot
