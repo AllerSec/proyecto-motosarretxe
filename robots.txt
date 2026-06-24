@@ -82,5 +82,9 @@ Disallow: /
 # Sitemap
 Sitemap: https://www.motosarretxe.com/sitemap.xml
 
+# Recursos para modelos de lenguaje (IA) - convencion llmstxt.org
+# LLM-Content: https://www.motosarretxe.com/llms.txt
+# LLM-Full-Content: https://www.motosarretxe.com/llms-full.txt
+
 # Host
 Host: https://www.motosarretxe.com
