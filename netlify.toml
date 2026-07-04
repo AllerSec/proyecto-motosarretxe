@@ -40,6 +40,68 @@
   status = 301
   force = false
 
+# Paginas raiz ES sin .html -> con .html (canonicas)
+[[redirects]]
+  from = "/taller-motos-irun"
+  to = "/taller-motos-irun.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/reservas"
+  to = "/reservas.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/privacidad"
+  to = "/privacidad.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/cookies"
+  to = "/cookies.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/aviso-legal"
+  to = "/aviso-legal.html"
+  status = 301
+  force = false
+
+# Paginas raiz FR sin .html -> con .html (canonicas)
+[[redirects]]
+  from = "/fr/taller-motos-irun"
+  to = "/fr/taller-motos-irun.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/reservas"
+  to = "/fr/reservas.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/privacidad"
+  to = "/fr/privacidad.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/cookies"
+  to = "/fr/cookies.html"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/aviso-legal"
+  to = "/fr/aviso-legal.html"
+  status = 301
+  force = false
+
 # --------------------------------------------------------------------------
 # 2. CABECERAS DE SEGURIDAD
 # --------------------------------------------------------------------------
