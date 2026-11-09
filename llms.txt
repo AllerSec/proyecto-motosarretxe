@@ -30,6 +30,7 @@ Datos de contacto y negocio:
 ## Motos Honda disponibles
 
 - [Honda Forza 125](https://www.motosarretxe.com/motos/honda-forza-125.html)
+- [Honda ADV125](https://www.motosarretxe.com/motos/honda-adv-125.html) (novedad)
 - [Honda Forza 350](https://www.motosarretxe.com/motos/honda-forza-350.html)
 - [Honda PCX 125](https://www.motosarretxe.com/motos/honda-pcx-125.html)
 - [Honda PCX DX 125](https://www.motosarretxe.com/motos/honda-pcx-dx-125.html)
